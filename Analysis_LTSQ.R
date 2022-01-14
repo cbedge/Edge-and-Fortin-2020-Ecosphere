@@ -623,7 +623,7 @@ extime.plot.rand
 dev.off()
 
 #Writing all three figures together
-jpeg('Rand_Selection.jpeg', width=10, height=20, units="cm", res=300)
+tiff('Rand_Selection.tif', width=10, height=20, units="cm", res=300)
 ggarrange(metar.plot.rand, exprob.plot.rand, extime.plot.rand, ncol = 1, nrow = 3, align="hv",
           labels="AUTO", label.x=0.95, label.y=0.9, font.label = list(size=7, face ="plain"),
           common.legend = TRUE, legend="bottom")
@@ -1063,7 +1063,7 @@ dev.off()
 
 
 #Writing all three figures together
-jpeg('Tree_ConSelection.jpeg', width=10, height=20, units="cm", res=300)
+tiff('Tree_ConSelection.tif', width=10, height=20, units="cm", res=300)
 ggarrange(metar.plot.tree, exprob.plot.tree, extime.plot.tree, ncol = 1, nrow = 3, align="hv",
           labels="AUTO", label.x=0.95, label.y=0.9, font.label = list(size=7, face ="plain"),
           common.legend = TRUE, legend="bottom")
@@ -1502,7 +1502,7 @@ jpeg('ExTime_Erdos.jpeg', width=10, height=8, units="cm", res=300)
 extime.plot.erdos
 dev.off()
 
-jpeg('Erdos_ConSelection.jpeg', width=10, height=20, units="cm", res=300)
+tiff('Erdos_ConSelection.tif', width=10, height=20, units="cm", res=300)
 ggarrange(metar.plot.erdos, exprob.plot.erdos, extime.plot.erdos, ncol = 1, nrow = 3, align="hv",
           labels="AUTO", label.x=0.95, label.y=0.9, font.label = list(size=7, face ="plain"),
           common.legend = TRUE, legend="bottom")
